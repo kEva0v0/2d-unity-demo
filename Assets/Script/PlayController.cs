@@ -5,8 +5,10 @@ using UnityEngine;
 public class PlayController : MonoBehaviour
 {
 
-    public float speed = 20;
-    public float turnSpeed;
+    public float speed = 20f;
+    public float turnSpeed = 20f;
+    public float horizontalInput;
+    public float forwardInput;
 
     // Start is called before the first frame update
     void Start()
@@ -17,8 +19,10 @@ public class PlayController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
-        transform.Translate(Vector3.right * turnSpeed);
-        transform.Translate(Vector3.left * turnSpeed);
+        horizontalInput = Input.GetAxis("Horizontal");
+        forwardInput = Input.GetAxis("Vertical");
+
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
+        transform.Rotate(Vector3.up * Time.deltaTime * turnSpeed * horizontalInput);
     }
 }
