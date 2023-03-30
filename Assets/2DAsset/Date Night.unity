@@ -293,6 +293,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform
       objectReference: {fileID: 0}
+    - target: {fileID: 4338399686014214072, guid: 2d267414ff00a774f8b6c70d8ef6b228, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4338399686014214078, guid: 2d267414ff00a774f8b6c70d8ef6b228, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2190,6 +2194,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02aa110687dac48889030c949096724d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &3290107435825841455
 GameObject:
   m_ObjectHideFlags: 0
@@ -2281,7 +2288,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 30044eccba8c8473484b770bc5696f2c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
