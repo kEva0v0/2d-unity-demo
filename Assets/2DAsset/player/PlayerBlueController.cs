@@ -18,13 +18,9 @@ public class PlayerBlueController : MonoBehaviour
     void Start()
     {
         rb2D = gameObject.GetComponent<Rigidbody2D>();
-<<<<<<< HEAD
-
         moveSpeed = 1f;
         isJumping = false;
         jumpForce = 60f;
-=======
->>>>>>> 68e09dbd0365cf59b586813d294386edb5687f06
     }
 
     // Update is called once per frame
